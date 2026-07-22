@@ -66,7 +66,7 @@ export default function CommandPalette({ isOpen, onClose }) {
           onClose()
           break
         case 'linkedin':
-          window.open('https://linkedin.com/in/sudheesh-sura', '_blank')
+          window.open('https://www.linkedin.com/in/sudheesh-sura-09a28627a/', '_blank')
           onClose()
           break
       }
