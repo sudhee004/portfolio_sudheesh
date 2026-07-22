@@ -1,0 +1,152 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--topbar-h) + 4rem);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Log line */
+.hero-log-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  animation: fade-up 0.5s var(--ease-out) 0.1s both;
+}
+
+.hero-log-prefix {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.hero-log-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* Name block */
+.hero-content {
+  animation: fade-up 0.5s var(--ease-out) 0.2s both;
+}
+
+.hero-name-block {
+  margin-bottom: 1.5rem;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero-title-tag {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.hero-title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+}
+
+/* Summary */
+.hero-summary {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 560px;
+  margin-bottom: 1.75rem;
+}
+
+/* Meta row */
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+
+.hero-meta-item {
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+}
+
+.hero-meta-key {
+  color: var(--text-muted);
+}
+
+.hero-meta-val {
+  color: var(--text-secondary);
+}
+
+.hero-meta-accent {
+  color: var(--accent);
+}
+
+.hero-meta-sep {
+  color: var(--border-hover);
+  font-size: 0.7rem;
+}
+
+/* CTAs */
+.hero-ctas {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Background grid */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-grid-line {
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--i) * 22%);
+  width: 1px;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent, rgba(168, 255, 62, 0.04), transparent);
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: calc(var(--topbar-h) + 2.5rem);
+  }
+
+  .hero-meta {
+    gap: 0.4rem;
+  }
+
+  .hero-meta-sep {
+    display: none;
+  }
+}

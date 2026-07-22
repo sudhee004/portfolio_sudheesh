@@ -1,0 +1,18 @@
+/* App-level layout */
+#main-content {
+  padding-top: var(--topbar-h);
+}
+
+.section-divider {
+  height: 1px;
+  background: var(--border);
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* Fix: divider should span full width via its padding context */
+.section-divider {
+  max-width: 100%;
+  background: linear-gradient(to right, transparent, var(--border) 15%, var(--border) 85%, transparent);
+}
