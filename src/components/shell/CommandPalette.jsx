@@ -3,16 +3,16 @@ import { AnimatePresence, motion } from 'framer-motion'
 import './CommandPalette.css'
 
 const ACTIONS = [
-  { id: 'nav-hero',     type: 'nav',    icon: '§', label: 'Go to Hero',       desc: 'section / hero',      section: 'hero' },
-  { id: 'nav-skills',   type: 'nav',    icon: '§', label: 'Go to Skills',      desc: 'section / skills',    section: 'skills' },
-  { id: 'nav-projects', type: 'nav',    icon: '§', label: 'Go to Projects',    desc: 'section / projects',  section: 'projects' },
-  { id: 'nav-timeline', type: 'nav',    icon: '§', label: 'Go to Timeline',    desc: 'section / timeline',  section: 'timeline' },
-  { id: 'nav-activity', type: 'nav',    icon: '§', label: 'Go to Activity',    desc: 'section / activity',  section: 'activity' },
-  { id: 'nav-contact',  type: 'nav',    icon: '§', label: 'Go to Contact',     desc: 'section / contact',   section: 'contact' },
-  { id: 'act-resume',   type: 'action', icon: '↓', label: 'Download Resume',   desc: 'action / download',   action: 'resume' },
-  { id: 'act-email',    type: 'action', icon: '✉', label: 'Copy Email',        desc: 'action / clipboard',  action: 'email' },
-  { id: 'act-github',   type: 'action', icon: '⌥', label: 'Open GitHub',       desc: 'action / external',   action: 'github' },
-  { id: 'act-linkedin', type: 'action', icon: '⌥', label: 'Open LinkedIn',     desc: 'action / external',   action: 'linkedin' },
+  { id: 'nav-hero', type: 'nav', icon: '§', label: 'Go to Hero', desc: 'section / hero', section: 'hero' },
+  { id: 'nav-skills', type: 'nav', icon: '§', label: 'Go to Skills', desc: 'section / skills', section: 'skills' },
+  { id: 'nav-projects', type: 'nav', icon: '§', label: 'Go to Projects', desc: 'section / projects', section: 'projects' },
+  { id: 'nav-timeline', type: 'nav', icon: '§', label: 'Go to Timeline', desc: 'section / timeline', section: 'timeline' },
+  { id: 'nav-activity', type: 'nav', icon: '§', label: 'Go to Activity', desc: 'section / activity', section: 'activity' },
+  { id: 'nav-contact', type: 'nav', icon: '§', label: 'Go to Contact', desc: 'section / contact', section: 'contact' },
+  { id: 'act-resume', type: 'action', icon: '↓', label: 'Download Resume', desc: 'action / download', action: 'resume' },
+  { id: 'act-email', type: 'action', icon: '✉', label: 'Copy Email', desc: 'action / clipboard', action: 'email' },
+  { id: 'act-github', type: 'action', icon: '⌥', label: 'Open GitHub', desc: 'action / external', action: 'github' },
+  { id: 'act-linkedin', type: 'action', icon: '⌥', label: 'Open LinkedIn', desc: 'action / external', action: 'linkedin' },
 ]
 
 function fuzzyMatch(query, text) {
@@ -62,7 +62,7 @@ export default function CommandPalette({ isOpen, onClose }) {
           })
           break
         case 'github':
-          window.open('https://github.com/sudheesh004', '_blank')
+          window.open('https://github.com/sudhee004', '_blank')
           onClose()
           break
         case 'linkedin':

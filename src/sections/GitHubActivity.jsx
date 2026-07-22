@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { formatDistanceToNow } from 'date-fns'
 import './GitHubActivity.css'
 
-const GH_USER = 'sudheesh004'
+const GH_USER = 'sudhee004'
 
 function EventRow({ event }) {
   const getEventMeta = (e) => {

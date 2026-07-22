@@ -11,7 +11,7 @@ const PROJECTS = [
     year: '2025',
     hash: 'a3f2c1d',
     stack: ['Java', 'JSP', 'Servlets', 'JDBC', 'MySQL', 'HTML/CSS'],
-    github: 'https://github.com/sudheesh004',
+    github: 'https://github.com/sudhee004',
     demo: null,
     tabs: {
       problem: {
@@ -53,7 +53,7 @@ Key takeaways: understanding how frameworks abstract the servlet lifecycle, the 
     year: '2025',
     hash: 'b8e1f4a',
     stack: ['Solidity', 'Hardhat', 'React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/sudheesh004',
+    github: 'https://github.com/sudhee004',
     demo: null,
     tabs: {
       problem: {
@@ -96,7 +96,7 @@ Key learnings: the cost model of smart contract storage (why you minimize on-cha
     year: '2024–25',
     hash: 'c2d9a7b',
     stack: ['Python', 'JavaScript', 'HTML/CSS', 'REST API'],
-    github: 'https://github.com/sudheesh004',
+    github: 'https://github.com/sudhee004',
     demo: null,
     tabs: {
       problem: {
